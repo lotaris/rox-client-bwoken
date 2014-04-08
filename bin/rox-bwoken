@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require File.join(File.dirname(__FILE__), '..', 'lib', 'rox-client-bwoken')
+
+RoxClient.configure do |config|
+  config.client_name = 'bwoken'
+  config.project.category = 'UIAutomation'
+end
+
+require 'bwoken/cli'
